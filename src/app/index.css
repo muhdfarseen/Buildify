@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.red {
+    color: red;
+}
+
+.hero-text {
+    color: white;
+    font-size: 3rem; /* Smaller default size for mobile */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 20px; /* Add some margin for smaller screens */
+}
+
+.hero-button {
+    color: white;
+    background-color: rgb(248, 3, 3);
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: white;
+        color: red;
+    }
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .hero-text {
+        font-size: 4rem; /* Larger text for tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-text {
+        font-size: 5rem; /* Even larger text for desktops */
+    }
+
+    .hero-button {
+        font-size: 14px;
+        padding: 10px 20px; /* Larger button for desktops */
+    }
+}
+
+.soc-icon {
+    &:hover {
+        cursor: pointer;
+        stroke: red;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.2);
+    }
+}
+
+.hvrred {
+    &:hover {
+        cursor: pointer;
+        color: red !important;
+    }
+}
