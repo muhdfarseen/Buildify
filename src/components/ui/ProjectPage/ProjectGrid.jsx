@@ -10,7 +10,7 @@ export const ProjectGrid = () => {
     const [currentProject, setCurrentProject] = useState(null);
 
     const handleCardClick = (project) => {
-        setCurrentProject(project); 
+        setCurrentProject(project);
         open();
     };
 
@@ -31,10 +31,10 @@ export const ProjectGrid = () => {
 
             {currentProject && (
                 <Modal radius={'lg'} size={'xl'} opened={opened} onClose={close} title={currentProject.title}>
-                    <Carousel withIndicators height={200} loop>
+                    <Carousel withIndicators height={260} slideSize='60%' slideGap='md' loop>
                         {currentProject.modalContent.images.map((image, index) => (
                             <Carousel.Slide key={index}>
-                                <Image radius={'lg'} src={image} />
+                                <Image fit='cover' height={260} radius={'lg'} src={image} />
                             </Carousel.Slide>
                         ))}
                     </Carousel>

@@ -9,15 +9,10 @@ export const HomePage = () => {
     return (
         <>
             <HeroPage />
-
             <Weare />
-
             <OurProjects />
-
             <OurStories />
-
             <Testimonials />
-
             <Footer />
         </>
     );

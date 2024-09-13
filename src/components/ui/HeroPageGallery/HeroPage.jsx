@@ -37,7 +37,7 @@ export const HeroPage = () => {
         { name: 'Gallery', path: '/gallery' },
         { name: 'Projects', path: '/projects' },
         { name: 'About us', path: '#about' },
-        { name: 'Contact us', path: '#contact' }
+        { name: 'Contact us', path: '/contact' }
     ];
 
     return (
