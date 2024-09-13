@@ -5,7 +5,7 @@ export const CustCard = (props) => {
     const isMobile = useMediaQuery('(max-width: 768px)');
 
     return (
-        <Box p={20} w={{ base: '100%', md: '40%' }}>
+        <Box onClick={props.onClick} style={{ cursor: 'pointer' }} p={20} w={{ base: '100%', md: '40%' }}>
             <BackgroundImage style={{ borderRadius: '10px' }} src={props.img}>
                 <Flex h={'70vh'} justify={'start'} align={'end'}>
                     <Stack style={{ borderRadius: '0px 10px' }} bg={'white'} pl={20} pr={40} py={20} gap={4}>
