@@ -1,7 +1,7 @@
 import { Flex, Image, Text, Stack, Title, Button, Center } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import img from '../../../assets/weare.jpg';
-import img2 from '../../../assets/image.jpg';
+import img from '../../../assets/HomePage/weare.jpg';
+import img2 from '../../../assets/HomePage/weare2.jpg';
 import { IconChevronRight } from '@tabler/icons-react';
 
 export const Weare = () => {

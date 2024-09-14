@@ -36,7 +36,7 @@ export const HeroPageProject = () => {
         { name: 'Home', path: '/' },
         { name: 'Gallery', path: '/gallery' },
         { name: 'Projects', path: '/projects' },
-        { name: 'About us', path: '#about' },
+        { name: 'About us', path: '/aboutus' },
         { name: 'Contact us', path: '/contact' }
     ];
 
@@ -46,7 +46,7 @@ export const HeroPageProject = () => {
                 <BackgroundImage src={ProjectHeroImage}>
                     <Flex h={'100%'} direction={'column'} align={'center'} justify={'space-between'}>
                         <Flex w={'100%'} px={{ base: 20, md: 40 }} my={{ base: 20, md: 40 }} align={'center'} justify={'space-between'}>
-                            <Image src='/HLogo.svg' alt='logo' h={40} />
+                            <Image onClick={() => navigate('/')} style={{ cursor: 'pointer' }} src='/HLogo.svg' alt='logo' h={40} />
                             <IconMenu2 onClick={open} color='white' />
                         </Flex>
                         <Stack>
@@ -103,7 +103,12 @@ export const HeroPageProject = () => {
                                 &#169; Buildfy Design Co.
                             </Text>
                             <Text size='sm' c={'dark'}>
-                                Design & Developed by <span style={{ color: '#8D37EF' }}>Imiot Tech</span>
+                                Design & Developed by{' '}
+                                <span
+                                    style={{ cursor: 'pointer', color: '#8D37EF' }}
+                                    onClick={() => window.open('https://www.imiot.co.in/', '_blank')}>
+                                    Imiot Tech
+                                </span>
                             </Text>
                         </Stack>
                     </Box>

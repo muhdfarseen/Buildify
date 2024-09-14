@@ -10,7 +10,7 @@ export const OurProjects = () => {
     const navigate = useNavigate();
 
     return (
-        <Flex px={{ base: 0, md: 40 }} wrap={'wrap'} justify={'center'} align={'center'}>
+        <Flex px={{ base: 0, md: 40 }} wrap={'wrap'} justify={'center'} align={'center'} mb={50}>
             <Box p={{ base: '40', md: 0 }} pr={{ base: 0, md: '5%' }} w={{ base: '100%', md: '40%' }}>
                 <Stack pl={{ base: 0, md: 20 }}>
                     <Title fw={700} order={isMobile ? 3 : 1} style={{ fontFamily: 'Montserrat Alternates' }}>

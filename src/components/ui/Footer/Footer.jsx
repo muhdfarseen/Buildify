@@ -1,6 +1,6 @@
 import { Flex, Stack, Text, Group, Box, Image, Divider } from '@mantine/core';
 import Logo from '/HLogo.svg';
-import { IconMail, IconPhone } from '@tabler/icons-react';
+import { IconMail, IconPhone, IconBrandInstagram } from '@tabler/icons-react';
 
 export const Footer = () => {
     return (
@@ -44,6 +44,15 @@ export const Footer = () => {
                                 info@buildify.com
                             </Text>
                         </Group>
+                        <Group
+                            style={{ cursor: 'pointer' }}
+                            onClick={() => window.open('https://www.instagram.com/buildify_design.co/', '_blank')}
+                            align='center'>
+                            <IconBrandInstagram color='gray' />
+                            <Text size='sm' c={'#C9C9C9'}>
+                                buildify_design.co
+                            </Text>
+                        </Group>
                     </Stack>
                 </Flex>
 
@@ -55,7 +64,12 @@ export const Footer = () => {
                         &#169; Buildfy Design Co.
                     </Text>
                     <Text size='sm' c={'white'}>
-                        Design & Developed by <span style={{ color: '#8D37EF' }}>Imiot Tech</span>
+                        Design & Developed by{' '}
+                        <span
+                            style={{ cursor: 'pointer', color: '#8D37EF' }}
+                            onClick={() => window.open('https://www.imiot.co.in/', '_blank')}>
+                            Imiot Tech
+                        </span>
                     </Text>
                 </Group>
             </Flex>

@@ -40,7 +40,7 @@ export const ProjectGrid = () => {
                     </Carousel>
                     <Title mt={20}>{currentProject.title}</Title>
                     <Text c={'dimmed'}>{currentProject.subheading}</Text>
-                    <Text mt={10}>{currentProject.modalContent.description}</Text>
+                    {/* <Text mt={10}>{currentProject.modalContent.description}</Text> */}
                 </Modal>
             )}
         </div>
