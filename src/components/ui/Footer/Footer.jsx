@@ -35,7 +35,7 @@ export const Footer = () => {
                         <Group align='center'>
                             <IconPhone color='gray' />
                             <Text fw={700} size='sm' c={'#C9C9C9'}>
-                                +91 1234 567 890
+                                +91 8590 015 087
                             </Text>
                         </Group>
                         <Group align='center'>
